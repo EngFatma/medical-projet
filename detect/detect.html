@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>التشخيص</title>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="css/detectStyle.css" rel="stylesheet">
+
+
+    <link href="css/detectStyle.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <!-- start navbar-->
+    <nav class="navbar bgcolor navbar-expand-lg navbar-light bg-light">
+
+        <div class="container">
+            <a class="navbar-brand" href="#"> <i class="fas  i2 fa-user-md"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">ابحث عن طبيب  
+                              <i class="fas fa-search"></i>
+
+                                </a>
+
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">كل يوم معلومه طبية <i class="fas fa-info"></i> </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">الأدوية<i class="fas fa-capsules"></i> </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"> الامراض <i class="fas fa-thermometer"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="detect.html"> التشخيص <i class="fas fa-diagnoses"></i></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../teb and seha/Teb and Helth.html">طب وصحة <i class="fas fa-star-of-life"></i><span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../start/index8.html"><i class="fas  i fa-home"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!--        end navbar-->
+
+
+    <!-- start  symptom -->
+    <div class="main container clearfix ">
+
+        <div class="symptom clearfix my-5">
+
+            <div class="s_Header clearfix mb-3">
+
+                <h3 class="float-right">ابدأ باختيارالفئة </h3>
+
+            </div>
+
+
+            <!-- choosing kind -->
+            <div class="s_right clearfix">
+
+
+
+                <ul class="nav nav-pills mb-3 clearfix float-right" id="pills-tab" role="tablist">
+                    <span class="float-right d-inline-block mt-2 span">الفئة</span>
+
+                    <li class="nav-item s_item mx-1">
+                        <a class="nav-link s_link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">رجل</a>
+                    </li>
+
+                    <li class="nav-item s_item mx-1">
+                        <a class="nav-link s_link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">امرأة</a>
+                    </li>
+
+                    <li class="nav-item s_item mx-1">
+                        <a class="nav-link s_link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">طفل</a>
+                    </li>
+                </ul>
+
+
+                <div class="tab-content" id="pills-tabContent">
+                    <!--########### man body ############ -->
+                    <div class="tab-pane fade show man clearfix" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="man_body clearfix">
+
+                            <!-- this div contain image of man and map of parts -->
+                            <div class="body_Select_part float-right">
+                                <div>
+
+                                    <img id="s-avatar" src="images/s_man_big.jpg" usemap="#bodypartmap" data-originalimg="images/s_man_big.jpg" alt="male avatar">
+                                    <img id="belly" src="images/man_belly.jpg" class="s-display-away" alt="belly">
+                                    <img id="chest_and_back" src="images/s_man_big_chest.jpg" class="s-display-away" alt="chest and back">
+                                    <img id="ear_nose_throat" src="images/s_man_big_ear_nose_throat.jpg" class="s-display-away" alt="ear nose throat">
+                                    <img id="eyes" src="images/s_man_big_eyes.jpg" class="s-display-away" alt="eyes">
+                                    <img id="arms_and_hands" src="images/s_man_big_hands.jpg" class="s-display-away" alt="hands and arms">
+                                    <img id="head_and_nick" src="images/s_man_big_head_nick.jpg" class="s-display-away" alt="head and nick">
+                                    <img id="legs" src="images/s_man_big_legs.jpg" class="s-display-away" alt="legs">
+                                    <img id="other" src="images/s_man_big_other_hover.jpg" class="s-display-away" alt="other">
+
+                                    <map name="bodypartmap" id="js-body-part-map">
+                                        <area shape="rect" coords="62,42,84,51" data-id='head_and_nick' data-href='#head_and_nick_ul' href='#head_and_nick_ul' alt='الرأس والعنق'>
+                                        <area shape="rect" coords="58,7,89,21" data-id='head_and_nick' data-href='#head_and_nick_ul' href='#head_and_nick_ul' alt='الرأس والعنق'>
+                                        <area shape="rect" coords="77,22,85,28" data-id="eyes" data-href="#man_eyes" href="#man_eyes" alt="العيون">
+                                        <area shape="rect" coords="61,22,70,28" data-id='eyes' data-href='#man_eyes' href='#man_eyes' alt='العيون'>
+
+                                        <area shape="rect" coords="85,23,91,33" data-id='ear_nose_throat' data-href='#man_nose_and_ear' href='#man_nose_and_ear' alt=' الأنف ,الأذن والحنجرة'>
+                                        <area shape="rect" coords="56,23,61,34" data-id='ear_nose_throat' data-href='#man_nose_and_ear' href='#man_nose_and_ear' alt=' الأنف ,الأذن والحنجرة'>
+                                        <area shape="rect" coords="69,25,78,42" data-id='ear_nose_throat' data-href='#man_nose_and_ear' href='#man_nose_and_ear' alt=' الأنف ,الأذن والحنجرة'>
+
+                                        <area shape="rect" coords="38,60,106,103" data-id='chest_and_back' data-href='#man_chest_and_back' href='#man_chest_and_back' alt='الصدر والظهر'>
+
+                                        <area shape="poly" coords="101,106,98,117,97,123,99,128,99,134,99,141,100,146,101,149,72,187,44,156,49,142,48,132,49,120,47,110,45,106" data-id='belly' data-href='#man_belly' href='#man_belly' alt='البطن والحوض'>
+
+                                        <area shape="rect" coords="26,64,38,157" data-id='arms_and_hands' data-href='#man_arms_and_hands' href='#man_arms_and_hands' alt='الذراعين واليدين'>
+
+                                        <area shape="rect" coords="19,118,27,163" data-id='arms_and_hands' data-href='#man_arms_and_hands' href='#man_arms_and_hands' alt='الذراعين واليدين'>
+
+                                        <area shape="rect" coords="5,163,30,193" data-id='arms_and_hands' data-href='#man_arms_and_hands' href='#man_arms_and_hands' alt='الذراعين واليدين'>
+
+                                        <area shape="rect" coords="106,62,120,163" data-id='arms_and_hands' data-href='#man_arms_and_hands' href='#man_arms_and_hands' alt='الذراعين واليدين'>
+
+                                        <area shape="rect" coords="120,116,133,161" data-id='arms_and_hands' data-href='#man_arms_and_hands' href='#man_arms_and_hands' alt='الذراعين واليدين'>
+
+                                        <area shape="rect" coords="119,161,144,192" data-id='arms_and_hands' data-href='#man_arms_and_hands' href='#man_arms_and_hands' alt='الذراعين واليدين'>
+                                        <area shape="poly" coords="73,187,93,163,100,152,102,168,104,193,103,205,101,214,95,227,95,236,96,253,91,283,89,300,87,311,88,321,93,329,80,328,75,327" data-id='legs' data-href='#man_legs' href='#man_legs' alt='الساقين'>
+                                        <area shape="poly" coords="51,329,55,319,54,304,50,290,50,280,50,262,49,240,43,221,42,206,42,187,43,157,72,189,68,321,68,327,68,328,67,327,68,332" data-id='legs' data-href='#man_legs' href='#man_legs' alt='الساقين'>
+                                    </map>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- list of body parts -->
+
+                        <div class="part_select float-right">
+
+                            <h1>اختيار عضو من جسم الرجل</h1>
+
+                            <ul id="bodyparts" class="list">
+
+                                <li id="js-dd-head_and_nick" class="clearfix " data-bodypart="head_and_nick">
+
+
+                                    <a title="أعراض الرأس والعنق" data-href="head_and_nick_ul" href="head_and_nick_ul" data-id="head_and_nick" class="link">
+                                        الرأس والعنق
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+                                    <!-- ul which contain head and neck amrad-->
+                                    <ul class="list d-none" id="head_and_nick_ul ">
+                                        <li class="link clearfix"><a href="امراض اخرى/تساقط الشعر عند الرجال.html">تساقط الشعر عند الرجال</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الصداع</a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الدوارعند الوقوف </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الم الرقبة </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">فقدان الشم والتذوق</a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">تورم الغدد في الرقبة </a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">الم الفك، اللثة او الاسنان</a><i class="fas fa-angle-left float-left"></i></li>
+                                        <li class="link"><a href="#">الارق </a></li>
+                                    </ul>
+
+                                </li>
+
+
+
+
+
+                                <li id="js-dd-eyes" class="clearfix" data-bodypart="eyes">
+
+                                    <a class="link" title="أعراض العيون" data-href="#man_eyes" href="#man_eyes" data-id="eyes">
+                                        العيون
+                                    </a>
+
+                                    <i class="fas fa-angle-left float-left"></i>
+                                    <ul class="list d-none" id="man_eyes">
+                                        <li class="link clearfix">
+                                            <a href="#">جفاف العين والفم</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+                                        <li class="link clearfix">
+                                            <a href="#">افرازات العين </a>
+                                            <i class="fas fa-angle-left float-left"></i>
+                                        </li>
+                                        <li class="link clearfix"><a href="#">الم العين</a><i class="fas fa-angle-left float-left"></i></li>
+                                    </ul>
+                                </li>
+
+
+                                <li id="js-dd-ear_nose_throat" class="clearfix" data-bodypart="ear_nose_throat">
+
+                                    <a class="link" title="أعراض  الأنف ,الأذن والحنجرة" data-href="#man_nose_and_ear" href="#man_nose_and_ear" data-id="ear_nose_throat">
+                                        الأنف والأذن والحنجرة
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="man_nose_and_ear">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">السعال والبرد</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">جفاف الفم والعطش الزائد</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الم الاذن عند الكبار</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">السعال المزمن </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#"> التهاب الحلق</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">فقدان السمع المفاجئ </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">صعوبة البلع</a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">طنين الاذن</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+
+                                    </ul>
+
+
+                                </li>
+
+
+                                <li id="js-dd-chest_and_back" class="clearfix" data-bodypart="chest_and_back">
+                                    <a class="link" title="أعراض الصدر والظهر" data-href="man_chest_and_back" href="man_chest_and_back" data-id="chest_and_back">
+                                        الصدر والظهر
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="man_chest_and_back">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">الم الصدر</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">خفقان القلب</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الم اسفل الظهر</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">ضيق التنفس عند الكبار </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الصفير مع التنفس عند الكبار</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                    </ul>
+
+
+                                </li>
+
+
+
+                                <li id="js-dd-arms_and_hands " class="clearfix" data-bodypart="arms_and_hands">
+                                    <a class="link" title="أعراض الذراعين واليدين" data-href="man_arms_and_hands" href="man_arms_and_hands" data-id="arms_and_hands">
+                                        الذراعين واليدين
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="man_arms_and_hands">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">الم المرفق</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">الم اليد</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">مشاكل الاظافر</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">العامل الروماتويدى الايجابى </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الم الكتف </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الم الرسغ </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+
+                                <li id="js-dd-belly" class="clearfix" data-bodypart="belly">
+                                    <a class="link" title="أعراض البطن والحوض" data-href="#man_belly" href="#man_belly" data-id="belly">
+                                        البطن والحوض
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="man_belly">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">علاج ارتداد حمض المعدة</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">غازات الامعاء</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#"> الدم في البول عند الرجال</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">فحص سرطان القولون </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الامساك عند الكبار </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الاسهال </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix">
+                                            <a href="#">صعوبة التبول</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">ضعف العضلات</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الم مفصل الحوض</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">فقد السيطرة على التبول عند الرجال </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">ورم او الم في كيس الخصيتين</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">كثرة التبول او التبول المؤلم عند الرجال</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix">
+                                            <a href="#">الم القضيب، قروحه، افرازاته او اورامه</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">نزيف المستقيم</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">
+                                                الالم المتكرر في البطن
+                                            </a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">الم البطن الشديد حديث الظهور </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">مستضد البروستاتا </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+
+
+
+                                <li id="js-dd-legs" class="clearfix" data-bodypart="legs">
+                                    <a class="link" title="أعراض الساقين" data-href="man_legs" href="man_legs" data-id="legs">
+                                        الساقين
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+
+                                    <ul class="list d-none" id="man_legs">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">الم القدم</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">النقرس</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الم الركبة</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">تورم القدم الحاد </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الالتهاب العظمي المفصلي للركبة </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#"> تورم الركبة المزمن</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#"> الم الكاحل </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+
+                                <li id="js-dd-other" class="clearfix" data-bodypart="other">
+                                    <a class="link" title="أعراض آخر" data-href="man_other" href="man_other" data-id="other">
+                                        آخر
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+
+
+                                    <ul class="list d-none" id="man_other">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">القلق</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">الاغماء او فقدان الوعي</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الضعف الجنسي لدى الرجال</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#"> الاكتئاب </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الالتهاب العظمي المفصلي للركبة </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#"> الالتهاب العظمي المفصلي للركبة</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#"> دوران ظهر حديثا </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#"> الخمول اثناء النهار</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#"> جفاف الجلد </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">الحمى عند الكبار </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">النسيان، وفقدان الذاكرة </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">علاج الجلد الجاف </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+
+                                        <li class="link clearfix"><a href="#">اختلال التوازن </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الحكة بدون طفح جلدي </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">اليرقان عند الكبار </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الغثيان والتقيؤ </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">التنميل او الوخز </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">تحليل ايجابي لاضداد النوى (ANA-antinuclear antibody positive) </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">ظاهرة رينود (Raynaud's) </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">المشاكل الجنسية عند الرجال</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">تورم في الغدد </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">علاج العجز الجنسي </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الارتعاش</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">زيادة الوزن بدون سبب معروف </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">فقدان الوزن غير المقصود </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الالم العام </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                    </ul>
+
+
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+
+                        <!-- diseases of body select part  -->
+
+                        <div class="part_sublist float-right" id="symptomsByBodyPart">
+
+                            <div id="bodyPartsContainer">
+
+                                <div id="symptomsList" class="clearfix">
+
+                                    <h1 id="bodyPartHeader" class="float-right">
+
+                                    </h1>
+
+                                </div>
+
+                                <ul class="list" id="symUl">
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                        <button class="btn btn-primary checkBtn d-block"><a href="detect.html"> ابدأ تشخيص جديد </a>  </button>
+
+
+                    </div>
+
+
+
+                    <!-- ######### women body ##########-->
+                    <div class="tab-pane fade show man clearfix" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+
+
+                        <div class="man_body clearfix">
+
+                            <!-- this div contain image of women and map of parts -->
+
+                            <div class="body_Select_part float-right">
+
+                                <div>
+
+                                    <img id="w-avatar" src="images/woman.jpg" usemap="#women_bodypartmap" data-originalimg="images/woman.jpg" alt="female avatar">
+
+                                    <img id="w_belly" src="images/s-woman-belly.jpg" class="s-display-away" alt="belly">
+
+                                    <img id="w_chest_and_back" src="images/s-woman-chest.jpg" class="s-display-away" alt="chest and back">
+
+
+                                    <img id="w_ear_nose_throat" src="images/s-woman-ear-nose-throat.jpg" class="s-display-away" alt="ear nose throat">
+
+
+                                    <img id="w_eyes" src="images/woman_eyes.jpg" class="s-display-away" alt="eyes">
+
+
+                                    <img id="w_arms_and_hands" src="images/s-woman-hands.jpg" class="s-display-away" alt="hands and arms">
+
+
+                                    <img id="w_head_and_nick" src="images/s-woman-head-nick.jpg" class="s-display-away" alt="head and nick">
+
+
+                                    <img id="w_legs" src="images/s-woman-legs.jpg" class="s-display-away" alt="legs">
+
+
+                                    <img id="w_other" src="images/s-woman-other.jpg" class="s-display-away" alt="other">
+
+                                    <map name="women_bodypartmap" id="w-body-part-map">
+
+                                        <area shape="rect" coords="62,50,83,57" data-id='w_head_and_nick' data-href='#w_head_and_nick_ul' href='#w_head_and_nick_ul' alt='الرأس والعنق'>
+
+
+                                        <area shape="rect" coords="57,15,88,29" data-id='w_head_and_nick' data-href='#w_head_and_nick_ul' href='#w_head_and_nick_ul' alt='الرأس والعنق'>
+
+
+                                        <area shape="rect" coords="76,29,84,35" data-id='w_eyes' data-href='#women_eyes' href='#women_eyes' alt='العيون'>
+
+
+                                        <area shape="rect" coords="61,30,70,36" data-id='w_eyes' data-href='#women_eyes' href='#women_eyes' alt='العيون'>
+
+
+                                        <area shape="rect" coords="86,31,92,38" data-id='w_ear_nose_throat' data-href='#women_nose_and_ear' href='#women_nose_and_ear' alt=' الأنف ,الأذن والحنجرة'>
+
+
+                                        <area shape="rect" coords="56,31,60,39" data-id='w_ear_nose_throat' data-href='#women_nose_and_ear' href='#women_nose_and_ear' alt=' الأنف ,الأذن والحنجرة'>
+
+
+                                        <area shape="rect" coords="69,32,78,44" data-id='w_ear_nose_throat' data-href='#women_nose_and_ear' href='#women_nose_and_ear' alt=' الأنف ,الأذن والحنجرة'>
+
+                                        <area shape="rect" coords="47,60,99,102" data-id='w_chest_and_back' data-href='#women_chest_and_back' href='#women_chest_and_back' alt='الصدر والظهر'>
+
+                                        <area shape="rect" coords="35,61,45,118" data-id='w_arms_and_hands' data-href='#women_arms_and_hands' href='#women_arms_and_hands' alt='الذراعين واليدين'>
+
+                                        <area shape="rect" coords="24,99,34,151" data-id='w_arms_and_hands' data-href='#women_arms_and_hands' href='#women_arms_and_hands' alt='الذراعين واليدين'>
+
+
+                                        <area shape="rect" coords="8,141,23,191" data-id='w_arms_and_hands' data-href='#women_arms_and_hands' href='#women_arms_and_hands' alt='الذراعين واليدين'>
+
+
+                                        <area shape="rect" coords="102,67,115,117" data-id='w_arms_and_hands' data-href='#women_arms_and_hands' href='#women_arms_and_hands' alt='الذراعين واليدين'>
+
+
+                                        <area shape="poly" coords="96,107,95,125,95,131,104,155,73,177,44,161,51,132,51,117,50,107,96,107" data-id='w_belly' data-href='#women_belly' href='#women_belly' alt='البطن والحوض'>
+
+
+                                        <area shape="rect" coords="112,117,126,156" data-id='w_arms_and_hands' data-href='#women_arms_and_hands' href='#women_arms_and_hands' alt='الذراعين واليدين'>
+
+
+                                        <area shape="rect" coords="124,157,139,188" data-id='w_arms_and_hands' data-href='#women_arms_and_hands' href='#women_arms_and_hands' alt='الذراعين واليدين'>
+
+
+                                        <area shape="poly" coords="57,329,92,328,89,313,90,296,93,284,97,260,94,247,95,233,99,209,103,196,104,159,74,180,42,166" data-id='w_legs' data-href='#women_legs' href='#women_legs' alt='الساقين'>
+
+                                    </map>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- list of body select part -->
+
+                        <div class="part_select float-right">
+
+                            <h1>اختيار عضو من جسم المرأة</h1>
+
+                            <ul id="w_bodyparts" class="list">
+
+                                <li id="w-js-dd-head_and_nick" class="clearfix " data-bodypart="w_head_and_nick">
+
+                                    <a title="أعراض الرأس والعنق" data-href="#w_head_and_nick_ul" href="#w_head_and_nick_ul" data-id="w_head_and_nick" class="link">
+                                        الرأس والعنق
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+
+                                    <ul class="list d-none" id="w_head_and_nick_ul ">
+
+                                        <li class="link clearfix"><a href="#">تساقط الشعر عند النساء </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الصداع</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الصداع عند الوقوف </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الدوارعند الوقوف </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الم الرقبة </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">فقدان الشم والتذوق</a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">تورم الغدد في الرقبة </a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">الم الفك، اللثة او الاسنان</a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الارق </a><i class="fas fa-angle-left float-left"></i></li>
+
+
+
+
+
+                                    </ul>
+
+                                </li>
+
+
+                                <li id="w-js-dd-eyes" class="clearfix" data-bodypart="w_eyes">
+                                    <a class="link" title="أعراض العيون" data-href="#women_eyes" href="#women_eyes" data-id="w_eyes">
+                                        العيون
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="women_eyes">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">جفاف العين والفم</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">افرازات العين </a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الم العين</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+
+                                    </ul>
+
+
+                                </li>
+
+
+
+                                <li id="w-js-dd-ear_nose_throat" class="clearfix" data-bodypart="w_ear_nose_throat">
+
+                                    <a class="link" title="أعراض  الأنف ,الأذن والحنجرة" data-href="#women_nose_and_ear" href="#women_nose_and_ear" data-id="w_ear_nose_throat">
+                                        الأنف والأذن والحنجرة
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="women_nose_and_ear">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">السعال والبرد</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">جفاف الفم والعطش الزائد</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الم الاذن عند الكبار</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">السعال المزمن </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#"> التهاب الحلق</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">فقدان السمع المفاجئ </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">صعوبة البلع</a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">طنين الاذن</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+
+                                    </ul>
+
+
+                                </li>
+
+
+                                <li id="w-js-dd-chest_and_back" class="clearfix" data-bodypart="w_chest_and_back">
+                                    <a class="link" title="أعراض الصدر والظهر" data-href="#women_chest_and_back" href="#women_chest_and_back" data-id="w_chest_and_back">
+                                        الصدر والظهر
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="women_chest_and_back">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">اورام الثدى</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">الم الثدى</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الم الصدر</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">خفقان القلب </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الم اسفل الظهر </a><i class="fas fa-angle-left float-left"></i></li>
+                                        <li class="link clearfix"><a href="#">ضيق التنفس عند الكبار </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الصفير مع التنفس عند الكبار</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                    </ul>
+
+
+                                </li>
+
+
+
+                                <li id="w-js-dd-arms_and_hands " class="clearfix" data-bodypart="w_arms_and_hands">
+                                    <a class="link" title="أعراض الذراعين واليدين" data-href="women_arms_and_hands" href="#women_arms_and_hands" data-id="w_arms_and_hands">
+                                        الذراعين واليدين
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="women_arms_and_hands">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">الم المرفق</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">الم اليد</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">مشاكل الاظافر</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">العامل الروماتويدى الايجابى </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الم الكتف </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الم الرسغ </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+
+
+                                <li id="w-js-dd-belly" class="clearfix" data-bodypart="w_belly">
+                                    <a class="link" title="أعراض البطن والحوض" data-href="#women_belly" href="#women_belly" data-id="w_belly">
+                                        البطن والحوض
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="women_belly">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">علاج ارتداد حمض المعدة</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">غازات الامعاء</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix">
+
+                                            <a href="#">النزيف المهبلي بعد انقطاع الطمث</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix">
+
+                                            <a href="#">النزيف بين دورات الحيض</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#"> االدم في البول عند النساء</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">فحص سرطان القولون </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الامساك عند الكبار </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الاسهال </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix">
+                                            <a href="#">صعوبة التبول</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">ضعف العضلات</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">كثرة التبول عند النساء</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">دورة شهرية غزيرة</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الم مفصل الحوض</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">فقد السيطرة على التبول عند النساء </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الغثيان والتقيؤ مع الحمل</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">عدم ظهور الحيض</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">نزيف المستقيم</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix">
+
+                                            <a href="#">الم المستقيم والحكة</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix">
+                                            <a href="#">الم القضيب، قروحه، افرازاته او اورامه</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+
+
+                                        <li class="link clearfix"><a href="#">
+                                                الالم المتكرر في البطن
+                                            </a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">الم البطن الشديد حديث الظهور </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">افرازات المهبل، الحكة او التهيج </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+                                        <li class="link clearfix"><a href="#">جفاف المهبل </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+                                        <li class="link clearfix"><a href="#">الم في المهبل </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+                                        <li class="link clearfix"><a href="#">قروح المهبل واورامه </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+                                        <li class="link clearfix"><a href="#">انقطاع الدورة الشهرية</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+                                        <li class="link clearfix"><a href="#">دورات الحيض المفقودة، او غير المنتظمة </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+
+
+
+                                <li id="w-js-dd-legs" class="clearfix" data-bodypart="w_legs">
+                                    <a class="link" title="أعراض الساقين" data-href="#women_legs" href="#women_legs" data-id="w_legs">
+                                        الساقين
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+
+                                    <ul class="list d-none" id="women_legs">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">الم القدم</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">النقرس</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الم الركبة</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">تورم القدم الحاد </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">تورم (ارتشاح) الساق اثناء الحمل </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الالتهاب العظمي المفصلي للركبة </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">تقلصات الدورة الشهرية المؤلمة </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#"> تورم الركبة المزمن</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#"> الم الكاحل </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                    </ul>
+
+
+                                </li>
+
+
+                                <li id="w-js-dd-other" class="clearfix" data-bodypart="women_other">
+                                    <a class="link" title="أعراض آخر" data-href="#women_other" href="#women_other" data-id="w_other">
+                                        آخر
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+
+
+                                    <ul class="list d-none" id="women_other">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">القلق</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">تنظيم النسل (منع الحمل) لدى النساء</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">الاغماء او فقدان الوعي</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+
+                                        <li class="link clearfix"><a href="#"> الاكتئاب </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">دوران ظهر حديثا </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#"> الخمول اثناء النهار</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+                                        <li class="link clearfix"><a href="#"> جفاف الجلد </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">الحمى عند الكبار </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">النسيان، وفقدان الذاكرة </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">علاج الجلد الجاف </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الهبات الحرارية </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+
+                                        <li class="link clearfix"><a href="#">اختلال التوازن </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الحكة بدون طفح جلدي </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">اليرقان عند الكبار </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الغثيان والتقيؤ </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">التنميل او الوخز </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">تحليل ايجابي لاضداد النوى (ANA-antinuclear antibody positive) </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">ظاهرة رينود (Raynaud's) </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">تورم في الغدد </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+                                        <li class="link clearfix"><a href="#">زيادة شعر الجسم والوجه عند النساء</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+                                        <li class="link clearfix"><a href="#">الارتعاش</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">زيادة الوزن بدون سبب معروف </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">فقدان الوزن غير المقصود </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">الالم العام </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+
+                        <!-- sub list of body select part  -->
+
+                        <div class="part_sublist float-right" id="w_symptomsByBodyPart">
+
+                            <div id="w_bodyPartsContainer">
+
+                                <div id="w_symptomsList" class="clearfix">
+
+                                    <h1 id="w_bodyPartHeader" class="float-right">
+
+                                    </h1>
+
+                                </div>
+
+                                <ul class="list" id="w_symUl">
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+                        <button class="btn btn-primary checkBtn d-block"><a href="detect.html"> ابدأ تشخيص جديد </a>  </button>
+
+
+                    </div>
+
+
+                    <!-- child body -->
+                    <div class="tab-pane fade show man clearfix" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+                        <!-- ############ child body ########## -->
+
+
+                        <div class="man_body clearfix">
+
+                            <!-- this div contain image of child and map of parts -->
+
+                            <div class="body_Select_part float-right">
+
+                                <div>
+
+                                    <img id="c-avatar" src="images/child_2.jpg" usemap="#child_bodypartmap" data-originalimg="images/child_2.jpg" alt="child avatar">
+
+                                    <img id="c_belly" src="images/child_belly_2.jpg" class="s-display-away" alt="belly">
+
+                                    <img id="c_chest_and_back" src="images/child_chest_and_back_2.jpg" class="s-display-away" alt="chest and back">
+
+
+                                    <img id="c_ear_nose_throat" src="images/child_ear_nose_throat_2.jpg" class="s-display-away" alt="ear nose throat">
+
+
+                                    <img id="c_eyes" src="images/child_eyes_2.jpg" class="s-display-away" alt="eyes">
+
+
+                                    <img id="c_head_and_nick" src="images/child_head_and_nick_2.jpg" class="s-display-away" alt="head and nick">
+
+
+
+                                    <img id="c_other" src="images/child_other_2.jpg" class="s-display-away" alt="other">
+
+                                    <map name="child_bodypartmap" id="c-body-part-map">
+
+                                        <area shape="rect" coords="62,63,84,72" data-id='c_head_and_nick' data-href='#c_head_and_nick_ul' href='#c_head_and_nick_ul' alt='الرأس والعنق'>
+
+                                        <area shape="rect" href="#head_and_nick" coords="59,30,88,42" data-id='c_head_and_nick' data-href='#c_head_and_nick_ul' href='#c_head_and_nick_ul' alt='الرأس والعنق'>
+
+                                        <area shape="rect" coords="77,42,84,49" data-id='c_eyes' data-href='#child_eyes' href='#child_eyes' alt='العيون'>
+
+
+                                        <area shape="rect" coords="64,44,70,51" data-id='c_eyes' data-href='#child_eyes' href='#child_eyes' alt='العيون'>
+
+                                        <area shape="rect" coords="85,46,91,56" data-id='c_ear_nose_throat' data-href='#child_nose_and_ear' href='#child_nose_and_ear' alt=' الأنف ,الأذن والحنجرة'>
+
+
+                                        <area shape="rect" coords="55,44,62,55" data-id='c_ear_nose_throat' data-href='#child_nose_and_ear' href='#child_nose_and_ear' alt=' الأنف ,الأذن والحنجرة'>
+
+
+                                        <area shape="rect" coords="70,45,77,57" data-id='c_ear_nose_throat' data-href='#child_nose_and_ear' href='#child_nose_and_ear' alt=' الأنف ,الأذن والحنجرة'>
+
+
+                                        <area shape="rect" href="#chest_and_back" coords="52,81,94,111" data-id='c_chest_and_back' data-href='#child_chest_and_back' href='#child_chest_and_back' alt='الصدر والظهر'>
+
+
+                                        <area shape="poly" coords="94,110,94,121,93,129,95,137,95,143,96,141,95,143,96,150,75,165,51,153,55,135,54,139,56,123,51,107,52,111" data-id='c_belly' data-href='#child_belly' href='#child_belly' alt='البطن والحوض'>
+
+
+
+                                    </map>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- list of body select part -->
+
+                        <div class="part_select float-right">
+
+                            <h1>اختيار عضو من جسم الطفل</h1>
+
+                            <ul id="c_bodyparts" class="list">
+
+                                <li id="c-js-dd-head_and_nick" class="clearfix " data-bodypart="c_head_and_nick">
+
+                                    <a title="أعراض الرأس والعنق" data-href="#c_head_and_nick_ul" href="#c_head_and_nick_ul" data-id="c_head_and_nick" class="link">
+                                        الرأس والعنق
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+
+                                    <ul class="list d-none" id="c_head_and_nick_ul ">
+
+                                        <li class="link"><a href="#">الصداع عند الاطفال </a></li>
+
+                                        <li class="link"><a href="#">اصابة الراس عند الاطفال</a></li>
+
+                                    </ul>
+
+                                </li>
+
+
+                                <li id="c-js-dd-eyes" class="clearfix" data-bodypart="c_eyes">
+                                    <a class="link" title="أعراض العيون" data-href="#child_eyes" href="#child_eyes" data-id="c_eyes">
+                                        العيون
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="child_eyes">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">العيون الحمراء عند الاطفال</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">مشاكل البصر </a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">البكاء عند الرضع</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+
+                                    </ul>
+
+
+                                </li>
+
+
+
+                                <li id="c-js-dd-ear_nose_throat" class="clearfix" data-bodypart="c_ear_nose_throat">
+
+                                    <a class="link" title="أعراض  الأنف ,الأذن والحنجرة" data-href="#child_nose_and_ear" href="#child_nose_and_ear" data-id="c_ear_nose_throat">
+                                        الأنف والأذن والحنجرة
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="child_nose_and_ear">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">علاج حساسية الانف عند الاطفال</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">الم الاذن عند الرضع والاطفال</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">التهاب الحلق عند الاطفال</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+
+                                    </ul>
+
+
+                                </li>
+
+
+                                <li id="w-js-dd-chest_and_back" class="clearfix" data-bodypart="c_chest_and_back">
+                                    <a class="link" title="أعراض الصدر والظهر" data-href="#child_chest_and_back" href="#child_chest_and_back" data-id="c_chest_and_back">
+                                        الصدر والظهر
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="child_chest_and_back">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">علاج الربو عند الاطفال</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">ضيق التنفس عند الاطفال والرضع</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">السعال عند الاطفال والرضع</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+
+                                    </ul>
+
+
+                                </li>
+
+
+
+
+                                <li id="c-js-dd-belly" class="clearfix" data-bodypart="c_belly">
+                                    <a class="link" title="أعراض البطن والحوض" data-href="#child_belly" href="#child_belly" data-id="c_belly">
+                                        البطن والحوض
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="child_belly">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">الم البطن عند الاطفال</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">التبول في الفراش</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix">
+
+                                            <a href="#">الامساك عند الاطفال</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix">
+
+                                            <a href="#">الامساك عند الرضع</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#"> الطفح الجلدي في منطقة الحفاضة</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix"><a href="#">الاسهال عند الاطفال </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الاسهال عند الرضع</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">علاج الامساك المزمن عند الاطفال</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix">
+                                            <a href="#">التقيؤ عند الرضع</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">التقيؤ او الغثيان عند الاطفال</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+
+
+
+                                <li id="c-js-dd-other" class="clearfix" data-bodypart="c_other">
+                                    <a class="link" title="أعراض آخر" data-href="#child_other" href="#child_other" data-id="c_other">
+                                        آخر
+                                    </a><i class="fas fa-angle-left float-left"></i>
+
+
+                                    <ul class="list d-none" id="child_other">
+
+
+                                        <li class="link clearfix">
+                                            <a href="#">مقاعد السيارات</a>
+                                            <i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">الحمى عند الاطفال</a><i class="fas fa-angle-left float-left"></i></li>
+
+
+                                        <li class="link clearfix">
+
+                                            <a href="#">الحمى عند الرضع</a>
+                                            <i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+
+                                        <li class="link clearfix"><a href="#"> طفلي غير هادئ </a><i class="fas fa-angle-left float-left"></i></li>
+
+                                        <li class="link clearfix"><a href="#">اليرقان (الصفراء) عند حديثي الولادة </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#"> التقييم الغذائي للاطفال والرضع</a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+                                        <li class="link clearfix"><a href="#"> الطفح الجلدي عند الاطفال </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+                                        <li class="link clearfix"><a href="#">الطفح الجلدي عند حديثي الولادة </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">خطر نقص الحديد عند الاطفال </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">علاج نزلات البرد عند الاطفال </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">علاج الثاليل عند الاطفال </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+
+
+                                        <li class="link clearfix"><a href="#">فقدان الوزن بدون سبب معروف عند الاطفال </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                        <li class="link clearfix"><a href="#">زيادة الوزن بدون سبب معروف عند الاطفال </a><i class="fas fa-angle-left float-left"></i>
+
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+
+                        <!-- sub list of body select part  -->
+
+                        <div class="part_sublist float-right" id="c_symptomsByBodyPart">
+
+                            <div id="c_bodyPartsContainer">
+
+                                <div id="c_symptomsList" class="clearfix">
+
+                                    <h1 id="c_bodyPartHeader" class="float-right">
+
+                                    </h1>
+
+                                </div>
+
+                                <ul class="list" id="c_symUl">
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+
+                        <button class="btn btn-primary checkBtn d-block"><a href="detect.html"> ابدأ تشخيص جديد </a>  </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- symptom -->
+            <div class="s_left">
+                <img class="img-fluid" src="images/symptoms.jpg" alt="مشخص الاعراض -ويب طب">
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <!-- footer -->
+
+
+    <footer>
+
+        <p class="text-center"> All rights reserved for ProgectName@ 2019.
+        </p>
+
+    </footer>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/detectScript.js"></script>
+
+</body>
+
+</html>

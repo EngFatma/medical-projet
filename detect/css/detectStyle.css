@@ -1,0 +1,484 @@
+
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    box-sizing: border-box;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #29333f;
+    padding: 0;
+    margin: 0;
+    background-color: #e3ecf0!important;
+    font-family: 'Tajawal', sans-serif;
+    height: 100%;
+    min-height: 100%;
+
+}
+.symptom{
+    width:100%;
+    background-color: white;
+    position :relative;
+     direction: rtl;
+    font-size: 20px;
+
+}
+
+.s_Header{
+    width: 100%;
+    background-color:#e3ecf0;
+   
+}
+
+.s_Header h3{
+    
+    padding: 6px;    
+    
+}
+.span{
+     font-size: 25px;
+    color: rgba(0,0,0,.8);
+}
+.s_right{
+    width:50%;
+    float: right;
+    
+    
+}
+
+.s_left{
+    width: 25%;
+    float :right;
+    
+}
+
+
+.s_item{
+border: 1px solid rgba(0,0,0,.2);
+padding: 0px 10px;
+    
+    
+}
+.s_link{
+    font-size: 35;
+    color: #16c1f5;
+    font-weight: 400;
+    
+    
+}
+.s_link:hover{
+    color: #16c1f5!important;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: #16c1f5!important; 
+    background-color: #fff!important;
+}
+
+
+
+
+/* start man body partselection */
+.man{
+    
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #e3ecf0;    
+    overflow:visible;
+    
+}
+.man_body{
+    width: 30%;
+    float: right;
+    margin-top: 75px;
+    margin-left: 10px;
+    background-color: white;
+    /*height: 386px;*/
+    
+    
+}
+
+
+.body_Select_part{
+    
+    width:100%;
+    text-align: center;    
+}
+
+.body-select-part>div{
+  background: #fff;
+  text-align: center;
+  /*min-height: 406px;*/
+
+}
+.s-display-away {
+  display: none;
+  left: -5000px;
+  position: absolute;
+}
+
+
+
+/*body parts list    */
+
+.part_select{
+    
+    width: 33%;
+    
+}
+
+.part_select h1{
+    padding-bottom: 7px;
+    border-bottom: 3px solid #16c1f5; 
+}
+
+.list{
+    list-style-type: none;
+    margin: 18px 0px 19px 0px;
+    background-color: white;
+    padding-right: 0px;
+     direction: rtl;
+
+    
+}
+
+.list li{
+   text-align:right;
+    text-decoration:none;
+    border-bottom: 1px solid #DFE4E5;
+    padding: 14px 10px 13px 32px;
+}
+.list li:hover{
+    background-color: #BCD1DC;
+    color: white;
+}
+.list li:hover a{
+        color: white;
+
+}
+.list li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+}
+
+
+.part_sublist
+{
+    width: 30%;
+}
+
+
+/* 
+ hover avatar 
+*/
+.hover{
+    background-color: #BCD1DC;
+    color: white;
+}
+
+.hover a{
+    color: white;
+}
+
+
+#bodyPartsContainer,#w_bodyPartsContainer,#c_bodyPartsContainer{
+width:100%;
+margin-right: 18px;    
+background-color:#e3ecf0;
+overflow:auto;    
+    
+    
+}
+
+
+#bodyPartHeader,#w_bodyPartHeader,#c_bodyPartHeader{
+padding-bottom: 7px;
+border-bottom: 3px solid #16c1f5;
+background-color:#e3ecf0; 
+    
+
+}
+
+.item{
+    
+    display: none;
+    position: absolute;
+     
+}
+
+
+h1{
+    font-family: 'ui light sego'
+}
+
+
+
+/* nav bar*/
+
+
+.nav1 {
+
+    padding-top: 25px !important;
+    width: 100%;
+    /*height: 50px;*/
+
+}
+
+
+
+a {
+    text-decoration: none !important;
+}
+
+
+.bgcolor {
+
+    background-color: #34697b !important;
+    font-family: "roboto";
+    width: 100%;
+    position: relative;
+    height: 70px;
+
+
+
+}
+
+.bgcolor .container ul{
+    
+     padding: 0;
+    left: 0;
+    list-style: none;
+    direction: ltr;
+}
+
+.bgcolor .container ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.bgcolor .container ul li a {
+
+    margin-left: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: white !important;
+}
+
+.space {
+    height: 100px;
+
+    position: relative;
+}
+
+.space h2 {
+    text-align: center;
+    color: #008eb7;
+    padding-top: 17px;
+    font-family: "roboto";
+    height: 100%;
+    position: relative;
+    font-size: 2.5 rem;
+}
+
+
+
+
+
+.fa-home {
+    font-size: 30px;
+
+}
+
+
+.i2 {
+    color: white !important;
+    font-size: 50px;
+}
+
+.navbar {
+    margin-bottom: 50px;
+}
+
+
+/* ابدأ تشخيص من جديد*/
+
+.checkBtn{
+    
+    position: absolute;
+    
+    bottom: -184px;
+    right: 468px;
+    
+    background-color: #16c1f5;
+    border: none;
+    padding: 10px 16px
+    
+}
+
+.checkBtn:hover{
+        background-color: #16c1f5;
+
+}
+
+
+.checkBtn a{
+    color: white;
+}
+
+
+
+
+
+/*footer*/
+
+
+footer {
+    font-family: 'segeo ui light' ;
+    color: white;
+    font-size: 18px;
+    background-color: #34697b !important;
+    width: 100%;
+    text-align: center;
+    position:relative;
+    bottom: 0px;
+    left: 0px;
+    padding: 5px 0px 5px 0px;
+    font-size:18px; 
+    margin-top: 50px;
+    /*margin-top: -100px;*/
+
+
+
+}
+footer p {
+    text-align: center;
+    font-size:20px;
+}
+
+
+.main{
+    margin-bottom:1098px;
+   /* margin-bottom: 172px;*/
+}
+
+/* تساقط الشعر عند الرجال */
+.outer_style{
+        text-align: right;
+    
+    font-size: 30px;
+    
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    
+    
+}
+.titl{
+    color: cornflowerblue;
+    margin:50px 25px;
+    font-size: 40px;
+    
+    
+    
+}
+.clr{
+    color:#54CA25;
+}
+
+.ques{
+      color: #c72f2f;
+}
+
+.ul_styl{
+    
+    direction: rtl;
+    position: relative;
+    list-style-type: none;
+
+    list-style: outside none none;
+    margin-bottom:30px;
+    margin-top: 0;
+    padding-right: 0;
+    padding-bottom: 35px;
+    
+    
+    
+}
+.ul_styl li{
+    position: relative;
+}
+
+.ul_styl li:before{
+    
+    background: #16c1f5 none repeat scroll 0 0;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 8px;
+    position: absolute;
+    right:-22px;
+    top: .6rem;
+    width: 8px;
+}
+
+
+.ask{
+    float: right;
+    border: 1px solid #a5dcde;
+    padding: 10px;
+    width:55%;
+    color:#16c1f5;
+    margin:10px;
+    
+}
+
+.h_parent{
+    
+    margin-top: 60px;
+}
+
+.h_fallBtn{
+    
+ 
+    background-color: #16c1f5;
+    border: none;
+    padding: 10px 16px
+    
+    
+}
+
+
+.h_fallBtn:hover{
+        background-color: #16c1f5;
+
+}
+
+
+.h_fallBtn a{
+    color: white;
+}
+
+
+.ma_bottom{
+    
+    padding-bottom:200px;
+}
+
+.style{
+    
+    color: #7c72cc
+
+}
+
+
+
+
